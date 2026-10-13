@@ -39,3 +39,12 @@ if((sum==100 || sub==20)&& div==20){
 else{
     console.log("i was wrong");
 }
+const price=100;
+if (price<=100){
+    const discount=price*(10/100);
+    const pay_price= price-discount;
+    console.log(pay_price);
+}
+// ------advance tarnari learn
+let age=13;
+age>=18? console.log('yea'):console.log('no')
