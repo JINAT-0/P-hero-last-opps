@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom events</title>
+    
+</head>
+<body>
+    <h1>dom doma dom dom dom events</h1>
+    <button onclick="console.log(7)">click me</button>
+    <input type="text">
+    <!-- option 2 for click event handler -->
+
+    <button onclick="makeYellow()">Make yellow</button>
+    <button onclick="makeRed()">make me red</button>
+    <button id="make-blue">make blue</button>
+    <button id="make-purple">make Purple</button>
+
+    <script>
+        const makePurple=document.getElementById('make-purple');
+        function make_Purple(){
+            document.body.style.background="purple";
+        }
+        makePurple.onclick=make_Purple;
+
+
+        function makeYellow(){
+            document.body.style.background="yellow";
+        }
+        function makeRed(){
+            document.body.style.background='red';
+        }
+        const makeblue=document.getElementById('make-blue');
+        makeblue.onclick=function makeBlue(){
+            document.body.style.background='blue';
+        }
+
+
+    </script>
+
+
+    <script src="./events.js"></script>
+</body>
+</html>
