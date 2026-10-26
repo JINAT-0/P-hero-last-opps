@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            color: gold;
+        }
+        #food_title{
+            color: green;
+        }
+    </style>
 </head>
 <body>
     <div> <h1 id="demo">hello world</h1>
@@ -14,6 +22,19 @@
         <li>hij</li>
     </ul>
     </div>
+    <section id="food">
+        <h1 id="food_title">foods i love</h1>
+        <ul>
+            <li>rice</li>
+            <li>potato</li>
+            <li>pasta/li>
+            <li>burger</li>
+            <li>pizza</li>
+            <li>meat</li>
+            <li>gril</li>
+        </ul>
+        <p>The querySelector() Method To do so, you have to find the elements first. <span>There are several</span> ways to do this:</p>
+    </section>
     <script>
         console.log("hello world");
         const a={
@@ -27,6 +48,8 @@
         for(const li of uli){
             console.log(li)
         }
+        const idd=document.getElementById("food_title");
+        console.log(idd.innerText);
     </script>
     <script src="./1.js"></script>
 </body>
