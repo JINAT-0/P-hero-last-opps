@@ -8,11 +8,31 @@
 <body>
     <h1 id="title">Event Handeler</h1>
     <button id="update">Update title</button>
+    <p id="used">no user</p>
+    <button id="new_btn">login</button>
+    <br>
+    <br> 
+    <br> 
+    <br>
+    <!-- handel input text -->
+     <p id="name">no name</p>
+     <input id="input_name" placeholder="your name" type="text">
+     <button id="update-btn">update</button>
     <script src="./13_4.js"></script>
     <script>
-        document.getElementById('update').addEventListener('click',function(){
-            console.log('button clicked');
+        const b=document.getElementById('update-btn')
+        b.addEventListener("click",function(){
+            console.log('you are update now')
         })
+        const f=document.getElementById('input_name')
+        b.addEventListener("click",function(){
+            console.log(input_name)
+            name=input_name.value;
+            console.log('name',name)
+        })
+        const namep=document.getElementById('name');
+        namep.innerText=name;
+   
     </script>
 </body>
 </html>
