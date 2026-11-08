@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of DOM</title>
+</head>
+<body>
+    <h1>dom events summary</h1>
+    <input id="name_input" type="text" placeholder="your name">
+    <button onclick="addName()">Add name</button>
+    <ul id="list"></ul>
+    <script>
+        function addName(){
+            // console.log("hfuhshf");
+            const n=document.getElementById('name_input');
+          
+            console.log(n);
+            const b=document.createElement('li');
+
+            const under=document.getElementById('list');
+            b.textContent=document.getElementById('name_type')
+            under.appendChild(b);
+            n.value='';
+
+        }
+    </script>
+</body>
+</html>
